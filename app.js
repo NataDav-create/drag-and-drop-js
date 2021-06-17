@@ -24,7 +24,7 @@ function dragend(e) {
 }
 
 function dragover(e) {
-
+  e.preventDefault();
 };
 
 function dragenter(e) {
@@ -36,5 +36,6 @@ function dragleave(e) {
 };
 
 function dragdrop(e) {
-
+  e.target.classList.remove('hovered');
+  e.target.append(item);
 };
